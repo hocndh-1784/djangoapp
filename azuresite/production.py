@@ -32,6 +32,9 @@ DATABASES = {
         'NAME': os.environ['DBNAME'],
         'HOST': hostname,
         'USER': os.environ['DBUSER'],
-        'PASSWORD': os.environ['DBPASS'] 
+        'PASSWORD': os.environ['DBPASS'] ,
+        'OPTIONS': {
+            'ssl': {'ca': '/var/www/html/BaltimoreCyberTrustRoot.crt.pem'}
+        }
     }
 }
