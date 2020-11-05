@@ -121,3 +121,9 @@ dmypy.json
 
 # Azure
 .azure/
+.idea/.gitignore
+.idea/djangoapp.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml

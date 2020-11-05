@@ -28,10 +28,10 @@ hostname = os.environ['DBHOST']
 # which we construct using the DBHOST value.
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ['DBNAME'],
-        'HOST': hostname + ".postgres.database.azure.com",
-        'USER': os.environ['DBUSER'] + "@" + hostname,
+        'HOST': hostname,
+        'USER': os.environ['DBUSER'],
         'PASSWORD': os.environ['DBPASS'] 
     }
 }
